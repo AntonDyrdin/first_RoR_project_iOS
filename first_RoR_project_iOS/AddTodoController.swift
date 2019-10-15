@@ -11,8 +11,7 @@ import UIKit
 
 class AddTodoController: UIViewController,UITableViewDataSource,UITableViewDelegate {
     
-    var todos=["todo1","todo2","todo3","todo4","todo5","todo6","todo7"]
-    var projects=["Семья","Работа","Прочее"]
+   var projects=["Семья","Работа","Прочее"]
     
     @IBOutlet weak var projectNameListView: UITableView!
     
@@ -31,13 +30,13 @@ class AddTodoController: UIViewController,UITableViewDataSource,UITableViewDeleg
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-         return todos.count
+         return projects.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         var cell =  tableView.dequeueReusableCell(withIdentifier: "project_name", for: indexPath) as! ProjectNameCell
         
-        cell.projectNameView.text = "asfds"
+        cell.projectNameView.text = projects[indexPath.row]
         
         return cell
     }
