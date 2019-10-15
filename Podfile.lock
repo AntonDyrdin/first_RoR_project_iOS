@@ -1,0 +1,24 @@
+PODS:
+  - Alamofire (4.4.0)
+  - M13Checkbox (3.1.0)
+  - SwiftyJSON (3.1.4)
+
+DEPENDENCIES:
+  - Alamofire (= 4.4.0)
+  - M13Checkbox (= 3.1.0)
+  - SwiftyJSON (= 3.1.4)
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - M13Checkbox
+    - SwiftyJSON
+
+SPEC CHECKSUMS:
+  Alamofire: dc44b1600b800eb63da6a19039a0083d62a6a62d
+  M13Checkbox: ca9d75d363b48c58c7e251f648ee1f459df90f46
+  SwiftyJSON: c2842d878f95482ffceec5709abc3d05680c0220
+
+PODFILE CHECKSUM: 75f85fa70ea7cfa5861e1215f4fc12a8e0c1631f
+
+COCOAPODS: 1.8.3
