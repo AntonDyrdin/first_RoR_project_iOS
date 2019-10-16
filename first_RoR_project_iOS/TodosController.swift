@@ -30,8 +30,8 @@ class TodosController: UIViewController,UITableViewDataSource,UITableViewDelegat
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-            var dest = segue.destination as! UINavigationController
-           var destVC = dest.viewControllers[0] as! AddTodoController
+        let dest = segue.destination as! UINavigationController
+            var destVC = dest.viewControllers[0] as! AddTodoController
             destVC.projects = self.projects
     
     }
@@ -77,6 +77,10 @@ class TodosController: UIViewController,UITableViewDataSource,UITableViewDelegat
         
         projectListView.dataSource=self
         projectListView.delegate=self
+        
+        todoArray=[]
+        projects=[]
+        todos=[[]]
         
         var responseTodoData = Data()
         //get todos

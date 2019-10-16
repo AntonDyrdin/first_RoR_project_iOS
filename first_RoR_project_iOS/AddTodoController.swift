@@ -52,6 +52,7 @@ class AddTodoController: UIViewController,UITableViewDataSource,UITableViewDeleg
     
     
     @IBAction func save(_ sender: Any) {
+        if (todoTextEditVeiw.text != ""){
         //отправка на сервер нового todo
         let parameters: Parameters = ["text": todoTextEditVeiw.text,
                                       "project": projects[projectNameListView.indexPathForSelectedRow!.row].title]
@@ -59,7 +60,9 @@ class AddTodoController: UIViewController,UITableViewDataSource,UITableViewDeleg
         Alamofire.request(TodosController.createTodoURL, method: HTTPMethod.post, parameters: parameters, encoding: JSONEncoding.default)
         
         navigationController?.popViewController(animated: true)
-        dismiss(animated: true, completion: nil)
+            dismiss(animated: true, completion: nil)
+            
+        }
     }
     @IBAction func back(_ sender: Any) {
         navigationController?.popViewController(animated: true)

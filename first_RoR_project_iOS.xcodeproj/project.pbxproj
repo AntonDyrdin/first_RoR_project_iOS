@@ -18,6 +18,7 @@
 		3A2767692354005F003A6FB1 /* first_RoR_project_iOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2767682354005F003A6FB1 /* first_RoR_project_iOSUITests.swift */; };
 		3A33B75123546B8500B6E65A /* AddTodoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A33B75023546B8500B6E65A /* AddTodoController.swift */; };
 		3A50A7682355513D00BE4F4C /* TodoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A50A7672355513D00BE4F4C /* TodoCell.swift */; };
+		3A554F3A2357077700848562 /* done_smallest.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A554F392357077600848562 /* done_smallest.png */; };
 		3A5C367B2356BC49005A2105 /* M13Checkbox.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A5C367A2356BC49005A2105 /* M13Checkbox.m */; };
 		3A6F7416235436770025D16E /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 3A6F7415235436770025D16E /* Podfile */; };
 		3A6F74182354368D0025D16E /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 3A6F74172354368D0025D16E /* Podfile */; };
@@ -66,6 +67,7 @@
 		3A33B752235478C500B6E65A /* OpenSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Regular.ttf"; sourceTree = "<group>"; };
 		3A4449D9B0C47659902219C8 /* Pods_first_RoR_project_iOS_first_RoR_project_iOSUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_first_RoR_project_iOS_first_RoR_project_iOSUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A50A7672355513D00BE4F4C /* TodoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoCell.swift; sourceTree = "<group>"; };
+		3A554F392357077600848562 /* done_smallest.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = done_smallest.png; sourceTree = "<group>"; };
 		3A5C367A2356BC49005A2105 /* M13Checkbox.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = M13Checkbox.m; sourceTree = "<group>"; };
 		3A5C367C2356BC70005A2105 /* M13Checkbox.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = M13Checkbox.h; sourceTree = "<group>"; };
 		3A5C367E2356BCC9005A2105 /* first_RoR_project_iOS-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "first_RoR_project_iOS-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -158,6 +160,7 @@
 				3AC4B974235488A9003248E5 /* done.png */,
 				3AC4B97D23551326003248E5 /* backIcon_small.png */,
 				3AC4B97B2355131B003248E5 /* done_small.png */,
+				3A554F392357077600848562 /* done_smallest.png */,
 				3AC4B973235488A8003248E5 /* addTodoIcon.png */,
 				3A33B752235478C500B6E65A /* OpenSans-Regular.ttf */,
 				3A27674C2354005F003A6FB1 /* Main.storyboard */,
@@ -324,6 +327,7 @@
 				3AC4B976235488AA003248E5 /* addTodoIcon.png in Resources */,
 				3A2767502354005F003A6FB1 /* Assets.xcassets in Resources */,
 				3A6F74182354368D0025D16E /* Podfile in Resources */,
+				3A554F3A2357077700848562 /* done_smallest.png in Resources */,
 				3AC4B97923548FC1003248E5 /* OpenSans-Regular.ttf in Resources */,
 				3A27674E2354005F003A6FB1 /* Main.storyboard in Resources */,
 			);

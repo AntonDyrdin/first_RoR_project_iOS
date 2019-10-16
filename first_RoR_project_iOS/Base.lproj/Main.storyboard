@@ -54,7 +54,7 @@
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RIW-ju-edh">
-                                                    <rect key="frame" x="12" y="-1" width="348" height="60"/>
+                                                    <rect key="frame" x="13" y="0.0" width="347" height="60"/>
                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="17"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -75,16 +75,23 @@
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WaF-rA-CfM">
-                                                    <rect key="frame" x="76" y="0.0" width="284" height="44"/>
+                                                    <rect key="frame" x="77" y="0.0" width="284" height="44"/>
                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="17"/>
                                                     <color key="textColor" red="0.26395839450000003" green="0.25969812269999998" blue="0.27716821429999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="done_smallest.png" translatesAutoresizingMaskIntoConstraints="NO" id="LAT-Me-0pD">
+                                                    <rect key="frame" x="30" y="12" width="20" height="20"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                                    <color key="backgroundColor" red="0.22526729109999999" green="0.68737220759999995" blue="0.85568529370000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </imageView>
                                             </subviews>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" red="0.94463465719999995" green="0.95495653359999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <connections>
+                                            <outlet property="checkBox" destination="LAT-Me-0pD" id="3Ox-0A-5nB"/>
                                             <outlet property="todoTextView" destination="WaF-rA-CfM" id="qNx-og-owO"/>
                                         </connections>
                                     </tableViewCell>
@@ -127,7 +134,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lZJ-Nl-mka" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-222" y="9"/>
+            <point key="canvasLocation" x="-201" y="116"/>
         </scene>
         <!--Новая задача-->
         <scene sceneID="XHu-rj-tFf">
@@ -216,12 +223,13 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UUg-0A-YDj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="558" y="116"/>
+            <point key="canvasLocation" x="545" y="116"/>
         </scene>
     </scenes>
     <resources>
         <image name="addTodoIcon.png" width="20" height="21"/>
         <image name="backIcon_small.png" width="24" height="16"/>
         <image name="done_small.png" width="32" height="25"/>
+        <image name="done_smallest.png" width="32" height="32"/>
     </resources>
 </document>
