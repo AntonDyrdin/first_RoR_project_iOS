@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "first_RoR_project_iOS/TodosController.swift"
-            timestampString = "592812368.360871"
+            timestampString = "592902101.523391"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "57"
-            endingLineNumber = "57"
+            startingLineNumber = "117"
+            endingLineNumber = "117"
             landmarkName = "tableView(_:viewForHeaderInSection:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -26,12 +26,60 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "first_RoR_project_iOS/TodosController.swift"
-            timestampString = "592812368.36095"
+            timestampString = "592902101.523793"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "60"
-            endingLineNumber = "60"
-            landmarkName = "tableView(_:viewForHeaderInSection:)"
+            startingLineNumber = "105"
+            endingLineNumber = "105"
+            landmarkName = "tableView(_:cellForRowAt:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "first_RoR_project_iOS/TodosController.swift"
+            timestampString = "592902101.523993"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "86"
+            endingLineNumber = "86"
+            landmarkName = "viewWillAppear(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "first_RoR_project_iOS/TodosController.swift"
+            timestampString = "592902101.524183"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "94"
+            endingLineNumber = "94"
+            landmarkName = "viewWillAppear(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "first_RoR_project_iOS/TodosController.swift"
+            timestampString = "592902101.524371"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "69"
+            endingLineNumber = "69"
+            landmarkName = "bothArraysAreReceived()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -42,11 +90,29 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "first_RoR_project_iOS/TodoCell.swift"
-            timestampString = "592814737.572848"
+            timestampString = "592902101.524742"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "41"
-            endingLineNumber = "41">
+            startingLineNumber = "15"
+            endingLineNumber = "15"
+            landmarkName = "m13CheckboxStateChange(to:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "first_RoR_project_iOS/TodoCell.swift"
+            timestampString = "592902101.524789"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "14"
+            endingLineNumber = "14"
+            landmarkName = "m13CheckboxStateChange(to:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -55,116 +121,46 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "first_RoR_project_iOS/TodoCell.swift"
-            timestampString = "592814737.572903"
+            filePath = "first_RoR_project_iOS/M13Checkbox.m"
+            timestampString = "592892797.644714"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "41"
-            endingLineNumber = "41">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "first_RoR_project_iOS.TodoCell.checkBox.getter : M13Checkbox.M13Checkbox"
-                  moduleName = "first_RoR_project_iOS"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/anton/Desktop/first_RoR_project_iOS/first_RoR_project_iOS/TodoCell.swift"
-                  timestampString = "592792994.37214"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "16"
-                  endingLineNumber = "16"
-                  offsetFromSymbolStart = "109">
-               </Location>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "first_RoR_project_iOS.TodoCell.checkBox.setter : M13Checkbox.M13Checkbox"
-                  moduleName = "first_RoR_project_iOS"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/anton/Desktop/first_RoR_project_iOS/first_RoR_project_iOS/TodoCell.swift"
-                  timestampString = "592792994.373673"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "16"
-                  endingLineNumber = "16"
-                  offsetFromSymbolStart = "112">
-               </Location>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "first_RoR_project_iOS.TodoCell.init(style: __C.UITableViewCellStyle, reuseIdentifier: Swift.Optional&lt;Swift.String&gt;) -&gt; first_RoR_project_iOS.TodoCell"
-                  moduleName = "first_RoR_project_iOS"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/anton/Desktop/first_RoR_project_iOS/first_RoR_project_iOS/TodoCell.swift"
-                  timestampString = "592792994.3752"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "16"
-                  endingLineNumber = "16"
-                  offsetFromSymbolStart = "210">
-               </Location>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "first_RoR_project_iOS.TodoCell.init(coder: __ObjC.NSCoder) -&gt; Swift.Optional&lt;first_RoR_project_iOS.TodoCell&gt;"
-                  moduleName = "first_RoR_project_iOS"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/anton/Desktop/first_RoR_project_iOS/first_RoR_project_iOS/TodoCell.swift"
-                  timestampString = "592792994.37672"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "16"
-                  endingLineNumber = "16"
-                  offsetFromSymbolStart = "129">
-               </Location>
-            </Locations>
+            startingLineNumber = "456"
+            endingLineNumber = "456"
+            landmarkName = "-endTrackingWithTouch:withEvent:"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "first_RoR_project_iOS/TodoCell.swift"
-            timestampString = "592814737.5729409"
+            filePath = "first_RoR_project_iOS/M13Checkbox.m"
+            timestampString = "592892797.644761"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "41"
-            endingLineNumber = "41">
+            startingLineNumber = "459"
+            endingLineNumber = "459"
+            landmarkName = "-endTrackingWithTouch:withEvent:"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "first_RoR_project_iOS/TodoCell.swift"
-            timestampString = "592814737.572976"
+            filePath = "first_RoR_project_iOS/M13Checkbox.m"
+            timestampString = "592892797.644803"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "41"
-            endingLineNumber = "41">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "first_RoR_project_iOS/TodoCell.swift"
-            timestampString = "592814737.573009"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "41"
-            endingLineNumber = "41">
+            startingLineNumber = "460"
+            endingLineNumber = "460"
+            landmarkName = "-endTrackingWithTouch:withEvent:"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

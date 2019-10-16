@@ -18,6 +18,7 @@
 		3A2767692354005F003A6FB1 /* first_RoR_project_iOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2767682354005F003A6FB1 /* first_RoR_project_iOSUITests.swift */; };
 		3A33B75123546B8500B6E65A /* AddTodoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A33B75023546B8500B6E65A /* AddTodoController.swift */; };
 		3A50A7682355513D00BE4F4C /* TodoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A50A7672355513D00BE4F4C /* TodoCell.swift */; };
+		3A5C367B2356BC49005A2105 /* M13Checkbox.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A5C367A2356BC49005A2105 /* M13Checkbox.m */; };
 		3A6F7416235436770025D16E /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 3A6F7415235436770025D16E /* Podfile */; };
 		3A6F74182354368D0025D16E /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 3A6F74172354368D0025D16E /* Podfile */; };
 		3AC4B976235488AA003248E5 /* addTodoIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 3AC4B973235488A8003248E5 /* addTodoIcon.png */; };
@@ -26,6 +27,8 @@
 		3AC4B97923548FC1003248E5 /* OpenSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3A33B752235478C500B6E65A /* OpenSans-Regular.ttf */; };
 		3AC4B97C2355131C003248E5 /* done_small.png in Resources */ = {isa = PBXBuildFile; fileRef = 3AC4B97B2355131B003248E5 /* done_small.png */; };
 		3AC4B97E23551327003248E5 /* backIcon_small.png in Resources */ = {isa = PBXBuildFile; fileRef = 3AC4B97D23551326003248E5 /* backIcon_small.png */; };
+		3AC5FB482355C2EB00D0D427 /* Todo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AC5FB472355C2EB00D0D427 /* Todo.swift */; };
+		3AC5FB4A2355C30100D0D427 /* Project.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AC5FB492355C30100D0D427 /* Project.swift */; };
 		3ACE94C423553DA10018BFEF /* SectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ACE94C323553DA10018BFEF /* SectionCell.swift */; };
 		F1D9A3C4B3E86047A4D6A818 /* Pods_first_RoR_project_iOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74DCDBFA8B6E74E2E5BC11F3 /* Pods_first_RoR_project_iOSTests.framework */; };
 /* End PBXBuildFile section */
@@ -63,6 +66,9 @@
 		3A33B752235478C500B6E65A /* OpenSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Regular.ttf"; sourceTree = "<group>"; };
 		3A4449D9B0C47659902219C8 /* Pods_first_RoR_project_iOS_first_RoR_project_iOSUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_first_RoR_project_iOS_first_RoR_project_iOSUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A50A7672355513D00BE4F4C /* TodoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoCell.swift; sourceTree = "<group>"; };
+		3A5C367A2356BC49005A2105 /* M13Checkbox.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = M13Checkbox.m; sourceTree = "<group>"; };
+		3A5C367C2356BC70005A2105 /* M13Checkbox.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = M13Checkbox.h; sourceTree = "<group>"; };
+		3A5C367E2356BCC9005A2105 /* first_RoR_project_iOS-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "first_RoR_project_iOS-Bridging-Header.h"; sourceTree = "<group>"; };
 		3A6F7415235436770025D16E /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		3A6F74172354368D0025D16E /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		3A6F7509235444660025D16E /* first_RoR_project_iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = first_RoR_project_iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -73,6 +79,8 @@
 		3AC4B975235488AA003248E5 /* backIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = backIcon.png; sourceTree = "<group>"; };
 		3AC4B97B2355131B003248E5 /* done_small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = done_small.png; sourceTree = "<group>"; };
 		3AC4B97D23551326003248E5 /* backIcon_small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = backIcon_small.png; sourceTree = "<group>"; };
+		3AC5FB472355C2EB00D0D427 /* Todo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Todo.swift; sourceTree = "<group>"; };
+		3AC5FB492355C30100D0D427 /* Project.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Project.swift; sourceTree = "<group>"; };
 		3ACE94C323553DA10018BFEF /* SectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionCell.swift; sourceTree = "<group>"; };
 		504D55D1169493BCE59C4B86 /* Pods-first_RoR_project_iOS-first_RoR_project_iOSUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-first_RoR_project_iOS-first_RoR_project_iOSUITests.debug.xcconfig"; path = "Target Support Files/Pods-first_RoR_project_iOS-first_RoR_project_iOSUITests/Pods-first_RoR_project_iOS-first_RoR_project_iOSUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		5F2E39A3CE3F86055F81D89B /* Pods-first_RoR_project_iOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-first_RoR_project_iOSTests.release.xcconfig"; path = "Target Support Files/Pods-first_RoR_project_iOSTests/Pods-first_RoR_project_iOSTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -156,6 +164,11 @@
 				3A2767482354005F003A6FB1 /* AppDelegate.swift */,
 				3A27674F2354005F003A6FB1 /* Assets.xcassets */,
 				3A2767542354005F003A6FB1 /* Info.plist */,
+				3AC5FB472355C2EB00D0D427 /* Todo.swift */,
+				3AC5FB492355C30100D0D427 /* Project.swift */,
+				3A5C367C2356BC70005A2105 /* M13Checkbox.h */,
+				3A5C367A2356BC49005A2105 /* M13Checkbox.m */,
+				3A5C367E2356BCC9005A2105 /* first_RoR_project_iOS-Bridging-Header.h */,
 			);
 			path = first_RoR_project_iOS;
 			sourceTree = "<group>";
@@ -263,6 +276,7 @@
 				TargetAttributes = {
 					3A2767442354005F003A6FB1 = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 					};
 					3A2767582354005F003A6FB1 = {
@@ -358,13 +372,11 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-first_RoR_project_iOS/Pods-first_RoR_project_iOS-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
-				"${BUILT_PRODUCTS_DIR}/M13Checkbox/M13Checkbox.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/M13Checkbox.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -416,13 +428,11 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-first_RoR_project_iOS-first_RoR_project_iOSUITests/Pods-first_RoR_project_iOS-first_RoR_project_iOSUITests-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
-				"${BUILT_PRODUCTS_DIR}/M13Checkbox/M13Checkbox.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/M13Checkbox.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -437,12 +447,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3AC5FB482355C2EB00D0D427 /* Todo.swift in Sources */,
 				3A27674B2354005F003A6FB1 /* TodosController.swift in Sources */,
+				3A5C367B2356BC49005A2105 /* M13Checkbox.m in Sources */,
 				3A50A7682355513D00BE4F4C /* TodoCell.swift in Sources */,
 				3A33B75123546B8500B6E65A /* AddTodoController.swift in Sources */,
 				3ACE94C423553DA10018BFEF /* SectionCell.swift in Sources */,
 				3A0874D523558D630044E421 /* ProjectNameCell.swift in Sources */,
 				3A2767492354005F003A6FB1 /* AppDelegate.swift in Sources */,
+				3AC5FB4A2355C30100D0D427 /* Project.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -601,11 +614,14 @@
 			baseConfigurationReference = E242DDB377BD64C30F49C851 /* Pods-first_RoR_project_iOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = first_RoR_project_iOS/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "ru.first-RoR-project-iOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "first_RoR_project_iOS/first_RoR_project_iOS-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -616,11 +632,13 @@
 			baseConfigurationReference = 9F66B382AC409BBC3E180111 /* Pods-first_RoR_project_iOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = first_RoR_project_iOS/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "ru.first-RoR-project-iOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "first_RoR_project_iOS/first_RoR_project_iOS-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};

@@ -6,7 +6,7 @@ target 'first_RoR_project_iOS' do
   use_frameworks!
 
   # Pods for first_RoR_project_iOS
-  pod 'M13Checkbox', '=3.1.0'
+  #pod 'M13Checkbox', '=3.1.0'
 	pod ‘Alamofire’, '=4.4.0' # https://github.com/Alamofire/Alamofire
 	pod 'SwiftyJSON’, '=3.1.4' # https://github.com/SwiftyJSON/SwiftyJSON
   target 'first_RoR_project_iOSTests' do

@@ -7,34 +7,77 @@
 //
 
 import UIKit
-import M13Checkbox
+import Alamofire
 
-class TodoCell: UITableViewCell{
+class TodoCell: UITableViewCell, M13CheckboxDelegate {
     
-
+    func m13CheckboxStateChange(to state: M13CheckboxState) {
+        tapFunction(sender: self)
+    }
+    
+    var todoModel = Todo()
+    
     @IBOutlet weak var todoTextView: UILabel!
     
-    public let checkBox:M13Checkbox = M13Checkbox(frame: CGRect(x: 0, y: 0, width: 20.0, height: 20.0))
+    public let checkBox:M13Checkbox = M13Checkbox(frame: CGRect(x: 0, y: 0, width: 24.0, height: 24.0))
     
-    public func setValues(text: String, isCompleted: Bool) {
+    var isViewLoaded = false
+    public func loadView(todoModel: Todo)
+    {
+        if(!isViewLoaded){
+            self.todoModel = todoModel
+            
+            todoTextView.isUserInteractionEnabled = true
+            let tap = UITapGestureRecognizer(target: self, action: #selector(self.tapFunction))
+            todoTextView.addGestureRecognizer(tap)
+            
+            checkBox.strokeWidth = 1
+            checkBox.translatesAutoresizingMaskIntoConstraints = false
+            checkBox.center = CGPoint(x: 40, y: self.bounds.midY)
+            checkBox.strokeColor = UIColor(red: 200/255.0, green: 200/255.0, blue: 200/255.0, alpha: 1.0)
+            checkBox.checkColor = UIColor.white
+            checkBox.uncheckedColor = UIColor.white
+            checkBox.backgroundColor = UIColor.white
+            checkBox.tintColor = UIColor(red: 0/255.0, green: 180/255.0, blue: 235/255.0, alpha: 1.0)
+            checkBox.radius = 0
         
-        todoTextView.text = text
+            isViewLoaded = true
+        }
+    }
+    
+    @objc func tapFunction(sender: Any) {
         
-        checkBox.translatesAutoresizingMaskIntoConstraints = false
-        checkBox.center = CGPoint(x: 40, y: self.bounds.midY)
-
+        if todoModel.isCompleted == "true"{
+            checkBox.checkState = M13CheckboxStateUnchecked
+            todoModel.isCompleted = "false"
+            
+            todoTextView.attributedText = NSAttributedString(string: todoModel.text, attributes: [NSAttributedStringKey.strikethroughStyle: NSUnderlineStyle.styleNone.rawValue ])
+        }
+        else{
+            todoModel.isCompleted = "true"
+            checkBox.checkState = M13CheckboxStateChecked
+            
+            todoTextView.attributedText = NSAttributedString(string: todoModel.text, attributes: [NSAttributedStringKey.strikethroughStyle: NSUnderlineStyle.styleSingle.rawValue ])
+        }
+        let parameters: Parameters = ["todo_id": String(todoModel.id), "isCompleted": "false"]
+        Alamofire.request(TodosController.updateTodoURL, method: HTTPMethod.post, parameters: parameters, encoding: JSONEncoding.default)
+    }
+    public func setValues( todoModel: Todo) {
+        loadView(todoModel: todoModel)
         
-        checkBox.boxType = M13Checkbox.BoxType.square
-        checkBox.stateChangeAnimation=M13Checkbox.Animation.fade(M13Checkbox.AnimationStyle.fill)
-        checkBox.cornerRadius=0;
-        checkBox.animationDuration=0.1
-        checkBox.secondaryCheckmarkTintColor = UIColor.white
-        checkBox.secondaryTintColor = UIColor(red: 200/255.0, green: 200/255.0, blue: 200/255.0, alpha: 1.0)
-        checkBox.backgroundColor = UIColor.white
-        checkBox.tintColor = UIColor(red: 0/255.0, green: 180/255.0, blue: 235/255.0, alpha: 1.0)
-        checkBox.checkmarkLineWidth = 3
+        todoTextView.text = self.todoModel.text
+        
+        if self.todoModel.isCompleted == "true"{
+            
+            todoTextView.attributedText = NSAttributedString(string: todoModel.text, attributes: [NSAttributedStringKey.strikethroughStyle: NSUnderlineStyle.styleSingle.rawValue ])
+            
+            checkBox.checkState = M13CheckboxStateChecked
+        }
+        else{
+            checkBox.checkState = M13CheckboxStateUnchecked
+        }
         
         self.addSubview(checkBox)
     }
-    
+
 }
