@@ -57,11 +57,10 @@ class AddTodoController: UIViewController,UITableViewDataSource,UITableViewDeleg
         let parameters: Parameters = ["text": todoTextEditVeiw.text,
                                       "project": projects[projectNameListView.indexPathForSelectedRow!.row].title]
         
-        Alamofire.request(TodosController.createTodoURL, method: HTTPMethod.post, parameters: parameters, encoding: JSONEncoding.default)
-        
-        navigationController?.popViewController(animated: true)
-            dismiss(animated: true, completion: nil)
-            
+            Alamofire.request(TodosController.createTodoURL, method: HTTPMethod.post, parameters: parameters, encoding: JSONEncoding.default).response{response in
+                self.navigationController?.popViewController(animated: true)
+                self.dismiss(animated: true, completion: nil)
+            }
         }
     }
     @IBAction func back(_ sender: Any) {

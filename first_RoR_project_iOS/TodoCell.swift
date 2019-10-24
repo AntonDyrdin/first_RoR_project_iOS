@@ -28,26 +28,11 @@ class TodoCell: UITableViewCell {
     public func loadView(todoModel: Todo)
     {
         if(!isViewLoaded){
-            self.todoModel = todoModel
-            
-            todoTextView.isUserInteractionEnabled = true
-             checkBox.isUserInteractionEnabled = true
-            let tap = UITapGestureRecognizer(target: self, action: #selector(self.tapFunction))
-            //todoTextView.addGestureRecognizer(tap)
-           
-         //   tap.addTarget(checkBox, action: #selector(self.tapFunction))
-            checkBox.addGestureRecognizer(tap)
-            
-          /*  checkBox.strokeWidth = 1
-            checkBox.translatesAutoresizingMaskIntoConstraints = false
-            checkBox.center = CGPoint(x: 40, y: self.bounds.midY)
-            checkBox.strokeColor = UIColor(red: 200/255.0, green: 200/255.0, blue: 200/255.0, alpha: 1.0)
-            checkBox.checkColor = UIColor.white
-            checkBox.uncheckedColor = UIColor.white
-            checkBox.backgroundColor = UIColor.white
-            checkBox.tintColor = UIColor(red: 0/255.0, green: 180/255.0, blue: 235/255.0, alpha: 1.0)
-            checkBox.radius = 0*/
         
+            todoTextView.isUserInteractionEnabled = true
+            checkBox.isUserInteractionEnabled = true
+            let tap = UITapGestureRecognizer(target: self, action: #selector(self.tapFunction))
+            checkBox.addGestureRecognizer(tap)
             isViewLoaded = true
         }
     }
@@ -56,20 +41,22 @@ class TodoCell: UITableViewCell {
         
         if todoModel.isCompleted == "true"{
             todoModel.isCompleted = "false"
-            // checkBox.checkState = M13CheckboxStateUnchecked
-             checkBox.backgroundColor = UIColor.white
+            checkBox.backgroundColor = UIColor.white
             todoTextView.attributedText = NSAttributedString(string: todoModel.text, attributes: [NSAttributedStringKey.strikethroughStyle: NSUnderlineStyle.styleNone.rawValue ])
+            let parameters: Parameters = ["todo_id": String(todoModel.id), "isCompleted": "false"]
+            Alamofire.request(TodosController.updateTodoURL, method: HTTPMethod.post, parameters: parameters, encoding: JSONEncoding.default)
         }
         else{
             todoModel.isCompleted = "true"
-           // checkBox.checkState = M13CheckboxStateChecked
-             checkBox.backgroundColor = UIColor(red: 0/255.0, green: 180/255.0, blue: 235/255.0, alpha: 1.0)
+            checkBox.backgroundColor = UIColor(red: 0/255.0, green: 180/255.0, blue: 235/255.0, alpha: 1.0)
             todoTextView.attributedText = NSAttributedString(string: todoModel.text, attributes: [NSAttributedStringKey.strikethroughStyle: NSUnderlineStyle.styleSingle.rawValue ])
+            let parameters: Parameters = ["todo_id": String(todoModel.id), "isCompleted": "true"]
+            Alamofire.request(TodosController.updateTodoURL, method: HTTPMethod.post, parameters: parameters, encoding: JSONEncoding.default)
         }
-        let parameters: Parameters = ["todo_id": String(todoModel.id), "isCompleted": "false"]
-        Alamofire.request(TodosController.updateTodoURL, method: HTTPMethod.post, parameters: parameters, encoding: JSONEncoding.default)
+       
     }
     public func setValues( todoModel: Todo) {
+            self.todoModel = todoModel
         loadView(todoModel: todoModel)
         
         todoTextView.text = self.todoModel.text
@@ -78,11 +65,9 @@ class TodoCell: UITableViewCell {
             
             todoTextView.attributedText = NSAttributedString(string: todoModel.text, attributes: [NSAttributedStringKey.strikethroughStyle: NSUnderlineStyle.styleSingle.rawValue ])
            checkBox.backgroundColor = UIColor(red: 0/255.0, green: 180/255.0, blue: 235/255.0, alpha: 1.0)
-          //  checkBox.checkState = M13CheckboxStateChecked
         }
         else{
              checkBox.backgroundColor = UIColor.white
-          //  checkBox.checkState = M13CheckboxStateUnchecked
         }
         
         self.addSubview(checkBox)

@@ -70,6 +70,7 @@ class TodosController: UIViewController,UITableViewDataSource,UITableViewDelegat
         }
         
     }
+
     override func viewWillAppear(_ animated: Bool) {
         navigationController?.navigationBar.barTintColor = UIColor(red: 0/255.0, green: 180/255.0, blue: 255/255.0, alpha: 1.0)
         navigationController?.navigationBar.titleTextAttributes = [.foregroundColor: UIColor.white]
@@ -108,8 +109,9 @@ class TodosController: UIViewController,UITableViewDataSource,UITableViewDelegat
         //находим cell, используя Identifier, который установили в storyboard, и возвращаем cell для текущего индекса
         var cell =  tableView.dequeueReusableCell(withIdentifier: "todo_text", for: indexPath) as! TodoCell
         
-        cell.setValues(todoModel: todos[indexPath.section][indexPath.row])
-        
+      //  if(cell.todoModel.text==""){
+            cell.setValues(todoModel: todos[indexPath.section][indexPath.row])
+       // }
         return cell
     }
     
